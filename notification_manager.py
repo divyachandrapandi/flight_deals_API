@@ -1,7 +1,7 @@
 from twilio.rest import Client
 
-account_sid = "ACe96dae203aa3443275c0f123e645e3bf"
-auth_token = "65e6e653e6e504de8059a14b58214d70"
+account_sid = SID"
+auth_token = "TOKEN"
 # TODO -14 to send sms, we need 7 parameters
 
 class NotificationManager:
@@ -14,16 +14,16 @@ class NotificationManager:
         message = self.client.messages \
             .create(
                 body= self.query,
-                from_='+19036627947',
-                to='+919952783610'
+                from_=FROM,
+                to=TO
                         )
         if stopover > 0:
             self.query += f"\nFlight has {stopover} stop over, via {via_city}."
             message = self.client.messages \
                 .create(
                 body=self.query,
-                from_='+19036627947',
-                to='+919952783610'
+                from_=FROM,
+                to=TO
             )
 
 
