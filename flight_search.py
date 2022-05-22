@@ -5,7 +5,7 @@ from pprint import pprint
 
 """https://tequila.kiwi.com/portal/docs/tequila_api/locations_api"""
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
-TEQUILA_API_KEY = "q6fA8loTAUjQXLxLnJ0NJkOoCAvlHTj0"
+TEQUILA_API_KEY = "apikey"
 headers = {
     "apikey": TEQUILA_API_KEY,
 }
